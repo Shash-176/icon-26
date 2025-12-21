@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Icon | X&0 Game</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css'>
+  <link rel="stylesheet" href="../assets/css/X&0-game.css">
+	<!-- Favicons -->
+    <link href="../assets/img/icon-logo.png" rel="icon">
+    <link href="../assets/img/icon-logo.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS File -->
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Libraries CSS Files -->
+    <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../assets/lib/venobox/venobox.css" rel="stylesheet">
+    <link href="../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/event-carousel.css" rel="stylesheet">
+
+</head>
+<body>
+ <!--==========================
+    Header
+  ============================-->
+    <script src="../header.js"></script>
+    <!-- #header -->
+
+    </div>
+<main id="main" class="main-page">
+
+        <!--==========================
+      Speaker Details Section
+    ============================-->
+        <section id="speakers-details" class="wow fadeIn">
+            <div class="container">
+                <div class="section-header">
+                    <h2>X & 0 game</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="bird-container" align-content="center">
+						
+                    </div>
+				</div>
+			</div>
+        </section>
+    </main>
+<!-- partial:index.partial.html -->
+<body >
+  <div class="container-fluid big text-xs-center">
+    <div class="row tall flex-items-xs-middle flex-items-xs-center">
+      <div id="chart" class="card card-block mb-0 p-1">
+        <table>
+          <tr>
+            <td>
+              <button id="1" class="tots">&nbsp;</button>
+            </td>
+            <td>
+              <button id="2" class="tots">&nbsp;</button>
+            </td>
+            <td>
+              <button id="3" class="tots">&nbsp;</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="4" class="tots">&nbsp;</button>
+            </td>
+            <td>
+              <button id="5" class="tots">&nbsp;</button>
+            </td>
+            <td>
+              <button id="6" class="tots">&nbsp;</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="7" class="tots">&nbsp;</button>
+            </td>
+            <td>
+              <button id="8" class="tots">&nbsp;</button>
+            </td>
+            <td>
+              <button id="9" class="tots">&nbsp;</button>
+            </td>
+          </tr>
+        </table>
+      </div> <!-- board -->
+    </div>   <!-- row -->
+  </div>     <!-- container -->
+</body>
+
+
+<div id="mainModal" class="modal fade container-fluid text-xs-center">
+  <div class="modal-dialog row h-100 my-0 flex-items-xs-middle flex-items-xs-center" role="document">
+    <div class="modal-content col-xs">
+      <div class="modal-header">
+        <h4 class="modal-title">Select any one of them </h4>
+      </div>
+      <div class="modal-body row flex-items-xs-middle">
+        <div class="col-xs"></div>
+        <button id="cross-selected" class="btn-select btn btn-primary p-0"><h1 class="display-3"><i class="fa fa-times"></i></h1></button>
+        <div class="col-xs"></div>
+        <button id="circle-selected" class="btn-select btn btn-primary p-0"><h1 class="display-3"><i class="fa fa-circle-o"></i></h1></button>
+        <div class="col-xs"></div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="playerWin" class="modal fade container-fluid text-xs-center">
+  <div class="modal-dialog row h-100 my-0 flex-items-xs-middle flex-items-xs-center" role="document">
+    <div class="modal-content col-xs p-0">
+      <div class="modal-body row flex-items-xs-middle py-0">
+        <div class="alert alert-success col-xs mb-0"><h1>You Win!</h1></div>
+      </div> <!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="playerLose" class="modal fade container-fluid text-xs-center">
+  <div class="modal-dialog row h-100 my-0 flex-items-xs-middle flex-items-xs-center" role="document">
+    <div class="modal-content col-xs p-0">
+      <div class="modal-body row flex-items-xs-middle py-0">
+        <div class="alert alert-danger col-xs mb-0"><h1>You Lost!</h1></div>
+      </div> <!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="tie" class="modal fade container-fluid text-xs-center">
+  <div class="modal-dialog row h-100 my-0 flex-items-xs-middle flex-items-xs-center" role="document">
+    <div class="modal-content col-xs p-0">
+      <div class="modal-body row flex-items-xs-middle py-0">
+        <div class="alert alert-warning col-xs mb-0"><h1> Tie!</h1></div>
+      </div> <!-- end of Modal Body -->
+    </div><!-- end of Modal Content -->
+  </div><!-- Modal Dialog -->
+</div><!-- Main Modal -->
+
+<h2 id="x-Icons" class="display-3"><i class="fa fa-times"></i></h2>
+<h2 id="o-Icons" class="display-3"><i class="fa fa-circle-o"></i></h2>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+<script src='https://use.fontawesome.com/74d3136c48.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'>
+</script><script  src="../assets/js/games/X&0-game.js"></script>
+<!--==========================
+    Footer
+  ============================-->
+    <script src="../footer.js"></script>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top" style="background-color: #b7202e;"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+    <script src="../assets/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/lib/easing/easing.min.js"></script>
+    <script src="../assets/lib/superfish/hoverIntent.js"></script>
+    <script src="../assets/lib/superfish/superfish.min.js"></script>
+    <script src="../assets/lib/wow/wow.min.js"></script>
+    <script src="../assets/lib/venobox/venobox.min.js"></script>
+    <script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="../assets/contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

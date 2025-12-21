@@ -1,0 +1,144 @@
+#allgallery {
+    font-family: Arial;
+    margin: 0;
+}
+
+#allgallery {
+    box-sizing: border-box;
+}
+
+#allgallery .subsection-header {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#allgallery .subsection-header::before {
+    display: none;
+}
+
+#allgallery .subsection-header h2 {
+    font-size: 3rem;
+    /* text-transform: uppercase; */
+    text-align: center;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#allgallery .subsection-header p {
+    text-align: center;
+    padding: 0;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #9195a2;
+}
+
+#allgallery .subsection-header {
+    background-color: #f6f7fd;
+}
+
+#allgallery .mySlides1,
+.mySlides2,
+.mySlides3 {
+    min-height: 500px;
+}
+
+#allgallery .mySlides1 img,
+.mySlides2 img,
+.mySlides3 img
+/* /mention id and class everywhere- otherwise style may clash with website's main stylesheet elements/ */
+
+{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#allgallery .gallery-container {
+    position: relative;
+    background: linear-gradient(to right, black, rgba(6, 12, 34, 0.8), #495464, #ffffff, #495464, rgba(6, 12, 34, 0.8), black);
+}
+
+
+/* /background color for the margins when width gets compressed ==responsive/ */
+
+#allgallery .cursor {
+    cursor: pointer;
+}
+
+#allgallery .prev,
+#allgallery .next {
+    cursor: pointer;
+    position: absolute;
+    background-color: #f6f7fd;
+    opacity: 0.6;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -30px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* /set prev button's position at extreme left in any device width ==responsive/ */
+
+#allgallery .prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+#allgallery .next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+#allgallery .prev:hover,
+#allgallery .next:hover {
+    background-color: #b7202e;
+    color: white;
+    opacity: 1;
+}
+
+#allgallery .numbertext {
+    background-color: #f6f7fd;
+    opacity: 0.6;
+    color: #000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+#allgallery .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+#allgallery .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#allgallery .column {
+    float: left;
+    width: 16.66%;
+}
+#allgallery .thumbnail {
+    opacity: 0.6;
+}
+#allgallery .active,
+#allgallery .thumbnail:hover {
+    opacity: 1;
+}

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ICON Somaiya</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="icon,icon somaiya, icon 2020, icon 2021 simsr,simsr, somaiya icon,simsr icon, 2021 icon, TECHNOGYRE, Technogyre,icon 2021, icon simsr,"
+        name="keywords">
+    <meta name="description"
+        content="ICON as the official techfest of K J Somaiya Institute of Management was started in 2008, it has always been our primary motive to encourage scientific thinking, innovation, creativity and some good old-fashioned fun.">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon2.png" rel="icon">
+    <link href="assets/img/favicon2.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
+
+
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <!-- Bootstrap CSS File -->
+    <link href="../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="../assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../assets/lib/venobox/venobox.css" rel="stylesheet">
+    <link href="../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/event-carousel.css" rel="stylesheet">
+
+    <!-- CSS for Chatbox -->
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="../chat/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+======================================================= -->
+    <style>
+        /* row fixes flex-content  */
+        .row {
+            justify-content: space-around !important;
+
+        }
+
+        /* for font ratio */
+        * {
+            --fs-sm: 16;
+            --fs-xxl: 16;
+            --fs-formula: min(max(calc(1px * var(--fs-sm)),
+                        calc(0.0625rem + (var(--fs-xxl) - 1) * ((100vw - 1px) / (1440 - 2)))),
+                    calc(1px * var(--fs-xxl)));
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        html * {
+            font-family: Marcellus !important;
+        }
+
+        @font-face {
+            font-family: myFiraFont;
+            src: url(FiraSans-Regular.ttf);
+        }
+
+        #intro {
+            width: 100%;
+            height: 140vh;
+            background: #fff;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .landing-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .landing {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .landing h1 {
+            /* font-size: 50px; */
+            --fs-sm: 40;
+            --fs-xxl: 50;
+            font-size: var(--fs-formula);
+        }
+
+        .landing p {
+            /* font-size: 20px; */
+            --fs-sm: 10;
+            --fs-xxl: 20;
+            font-size: var(--fs-formula);
+        }
+
+        .countdown.mobile-nav-active {
+            font-size: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .countdown {
+            font-size: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .countdown div {
+            padding: 1vw;
+            border: 1px #fff solid;
+            border-radius: 2em;
+            background: #FFF;
+            opacity: 0.7;
+            margin: 0.5rem;
+        }
+
+        .countdown div:first-child {
+            background: #FFF;
+        }
+
+        .countdown span {
+            display: block;
+            font-size: 3vh;
+        }
+
+        .social-links {
+            padding-right: 3px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #b7202e;
+        }
+
+        .social-links:hover {
+            color: #b7202e;
+            filter: brightness(120%);
+        }
+
+
+        @media (max-width: 350px) {
+            .landing img {
+                width: 70%;
+            }
+
+            .landing h1 {
+                font-size: 40px;
+            }
+
+            .countdown {
+                font-size: 5vw;
+                flex-direction: column;
+            }
+
+            .countdown div {
+                display: none;
+            }
+
+            .countdown div:first-child {
+                display: block;
+                width: 50%;
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 426px) {
+            .description>.content {
+                font-size: small;
+            }
+
+            #gallery {
+                padding: 20px;
+            }
+        }
+
+        .newlogo:hover {
+            text-decoration: none;
+        }
+
+
+        #header #logo img {
+            position: absolute;
+            left: 3%;
+            padding: 3px;
+            /* size: inherit; */
+            margin: auto;
+            height: 80px;
+            top: 12%;
+        }
+
+
+        #nav-menu-container {
+            /* float: right; */
+            margin: 0;
+            /* margin-right: 40px; */
+        }
+
+        @media (min-width: 992px) {
+
+            .description>.content {
+                font-size: medium;
+            }
+
+            .venoframe,
+            .vbox-inline {
+                max-width: 1200px;
+                width: 63%;
+                height: 540px;
+                height: 70vh;
+            }
+        }
+
+        #header {
+            height: 90px;
+        }
+
+
+        /* Font Awesome */
+
+        .fa-remove:before,
+        .fa-close:before,
+        .fa-times:before {
+            content: "\f00d";
+        }
+
+
+        .form-control::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: black;
+            opacity: 1;
+            /* Firefox */
+        }
+
+        .form-control:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: black;
+        }
+
+        .form-control::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: black;
+        }
+
+        .owl-nav {
+            display: none;
+        }
+
+
+        #hero-section {
+            /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+            background-image: url(fallback-gradient.svg);
+
+            /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+            background-image: -webkit-gradient(linear, left top, right top, from(white), to(white));
+
+            /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+            background-image: -webkit-linear-gradient(left, white, white);
+
+            /* Firefox 3.6 - 15 */
+            background-image: -moz-linear-gradient(left, white, white);
+
+            /* Opera 11.1 - 12 */
+            background-image: -o-linear-gradient(left, white, white);
+
+            /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+            background-image: linear-gradient(to right, white, white);
+            margin: 0px;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        #intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Center vertically */
+            align-items: center;
+            /* Center horizontally */
+            height: auto;
+            /* Ensure the section takes up the full viewport height */
+            position: relative;
+        }
+
+        #icon-text {
+            /**/
+            display: block;
+            font: 700 20vmin/1 "Fira Sans", sans-serif;
+            letter-spacing: 1vmin;
+            margin: 2vmin auto;
+            text-transform: uppercase;
+            /* text-shadow: 10px 10px #ddd; */
+            background: white;
+
+            color: #b7202e;
+            /* Text color */
+            position: absolute;
+            font-family: Arial, sans-serif;
+            /* Font family (change as needed) */
+            font-size: 5vw;
+            /* Responsive font size based on viewport width */
+            text-align: center;
+            /* Center text horizontally */
+            /*Padding spacing*/
+            padding: 0px 50px;
+
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .content-heading {
+            --fs-sm: 30;
+            --fs-xxl: 36;
+            font-size: var(--fs-formula);
+        }
+
+        .content-text {
+            --fs-sm: 18;
+            --fs-xxl: 20;
+            font-size: var(--fs-formula);
+        }
+
+        #vmi {
+            font-family: 'Marcellus', serif;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 12px 32px;
+            transition: 0.5s;
+            line-height: 1;
+            margin: 10px;
+            color: #b7202e;
+            -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+            border: 2px solid #b7202e;
+            text-decoration: none;
+        }
+
+        .loader {
+            position: fixed;
+            z-index: 100;
+            height: 100vh;
+            width: 100%;
+            background: #fff url(preloader.gif) no-repeat center;
+            background-size: 25%;
+        }
+
+        /* PS - slick carousel { */
+        .slick-center img {
+            transform: scale(1.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #b7202e !important;
+            opacity: 1 !important;
+            font-size: 25px !important;
+
+        }
+
+        .slick-dots li button:before {
+            color: #b7202e !important;
+            font-size: 10px !important;
+
+        }
+
+        .archieve-images {
+            height: 15em !important;
+            width: 100% !important;
+        }
+
+        .carousel-container img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .col-sm-6 ul li {
+            justify-content: left;
+            display: flex;
+        }
+
+        .modal-dialog {
+            max-width: 700px !important;
+        }
+
+
+        /* PS- Scroll Effect 
+        #intro,#about{
+            scroll-snap-align: start;
+            height: auto !important;
+        }
+        
+        .scroll-effect{
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll ;
+            height: 100vh;
+
+        }
+        */
+        .scroll-effect::-webkit-scrollbar {
+            width: 0.1em;
+        }
+
+        .scroll-effect::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            /* Make the thumb transparent */
+        }
+
+        .event-img {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+    <!-- form-brochure -->
+    <style>
+        #form-brochure {
+            overflow: hidden;
+            width: 450px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-radius: 7px;
+            box-shadow: 0 0 30px -10px;
+            background: white;
+        }
+
+        /* submit button */
+        #form-brochure button {
+            background: white;
+            position: absolute;
+            border: 1px solid #b7202e;
+            padding: 10px;
+            width: 25%;
+            color: #b7202e;
+            height: 100%;
+            font-size: 25px;
+            right: 0;
+            border-radius: 7px;
+            scale: 0.83;
+            transition: scale 0.3s ease;
+        }
+
+        #form-brochure input {
+            width: 75%;
+            padding: 13px;
+            font-size: 17px;
+            outline: none;
+            border: none;
+            color: #58595b;
+        }
+
+        .progressbar {
+            position: absolute;
+            width: 100%;
+            bottom: -5px;
+            height: 5px;
+            background: #ed1c24;
+            transition: bottom 0.2s ease;
+        }
+
+        .progressbar .bar {
+            width: 0%;
+            height: 100%;
+            background: #b7202e;
+        }
+
+        .submitted {
+            width: 100%;
+            height: 100%;
+            background: white;
+            top: 100%;
+            left: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            color: #b7202e;
+            transition: top 0.3s ease;
+            border: 1px solid #b7202e;
+            border-radius: 7px;
+        }
+
+        @keyframes push {
+
+            0%,
+            100% {
+                scale: 1;
+            }
+
+            50% {
+                scale: 0.95;
+            }
+        }
+
+        @keyframes scaleWidth {
+            0% {
+                width: 25%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes scaleBar {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* override tailwind css */
+        #form-brochure input {
+            --tw-ring-color: none;
+            --tw-ring-offset-shadow: none;
+            --tw-ring-shadow: none;
+        }
+
+
+        /*Details PopUp CSS*/
+        .modal-body p,
+        .modal-body ul {
+            padding: 0px;
+        }
+
+        .modal-body {
+            text-align: left;
+        }
+
+        h4.modal-title {
+            color: #b7202e;
+            font-weight: 500;
+        }
+
+        .modal-footer button {
+            font-size: 18px;
+            border: 1px solid;
+        }
+
+        .col-sm-6 p span {
+            color: #b7202e;
+        }
+
+        a.dialog_reg {
+            text-decoration: none;
+            font-size: 18px;
+            color: #b7202e;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        a.dialog_reg:hover {
+            color: white;
+            background: #b7202e;
+            border-color: #b7202e;
+        }
+
+        .vbox-content {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    </style>
+
+    <!-- CAROUSEL --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+<script>
+    window.addEventListener('load', function () {
+        var loader = document.getElementsByClassName("loader")[0];
+        setTimeout(function () {
+            loader.style.display = 'none';
+        }, 2000);
+    });
+</script>
+
+<body>
+    <div class="loader"></div>
+
+    <!--==========================Header ============================-->
+    <header id="header">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+
+                <a href="#intro" class="scrollto"><img src="../img/KJSIMlogo.jpg" alt="" title=""></a>
+            </div>
+
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="../index.html#intro">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#events">Events</a></li>
+                    <li><a href="../index.html#games">Arcades</a></li>
+                    <li><a href="../index.html#gallery">Gallery</a></li>
+                    <li><a href="../index.html#walkway">Archives</a></li>
+                    <li><a href="../pastsponsors.html">Sponsors</a></li>
+                    <li><a href="codeicon.html">CODEICON</a></li>
+                    <li><img id=iconsidebar src="../icon_logo.png" alt="" title="" style="height:60px;width:90px;margin-top: -10px;
+            margin-left: 20px;"></li>
+                    <!-- <li><a href="index.html#sponsors">Sponsors</a></li> -->
+
+                    <!-- <div> -->
+                    <div id="iconlogo">
+                    </div>
+
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+
+        </div>
+    </header>

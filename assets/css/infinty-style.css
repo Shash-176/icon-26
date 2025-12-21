@@ -1,0 +1,168 @@
+#container{
+  margin-top: 1%;
+  margin-left:25%;
+  display: inline-block;
+}
+canvas{
+  background: #cecece;
+  border: 1px solid #181818;
+}
+.starter {
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 50px;
+	margin-top: -25px;
+	margin-left: -150px;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.float{
+	position:center;
+	width:80px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#b7202e;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+#scene {
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	width: 1200px;
+	height: 600px;
+	overflow: hidden;
+	margin-top: -300px;
+	margin-left: -600px;
+	background-color: rgb(0,0,0);
+	box-shadow: 0 0 0 2px white inset;
+}
+#intro .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#b7202e 50%, rgba(101, 111, 150, 0.15) 52%);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#intro .play-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+#intro .play-btn:before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate-btn 2s;
+    animation: pulsate-btn 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(163, 163, 163, 0.4);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+}
+
+#intro .play-btn:hover::after {
+    border-left: 15px solid #b7202e;
+    -webkit-transform: scale(20);
+    transform: scale(20);
+}
+
+#intro .play-btn:hover::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    -webkit-animation: none;
+    animation: none;
+    border-radius: 0;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dashArray: 300;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 1s ease,  opacity 1s ease;
+}
+
+.icon {
+  transform: scale(0.8);
+  transform-origin: 50% 50%;
+  transition: transform 200ms ease-out;
+}
+
+#play:hover .stroke-solid {
+  opacity: 1;
+  stroke-dashoffset: 300;
+}
+#play:hover .icon {
+  transform: scale(0.9);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: url("http://taylorswines.uat.playhousedigital.com/media/wysiwyg/TaylorsWines/Homepage/img_video.png");
+}
+
+#play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
